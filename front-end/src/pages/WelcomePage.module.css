@@ -1,0 +1,37 @@
+/* src/pages/WelcomePage.module.css */
+.welPagWelcomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #3f51b5, #1a237e);
+    color: white;
+}
+
+.welPagWelcomeTitle {
+    font-size: 3rem;
+}
+
+.welPagWelcomeSubtitle {
+    font-size: 1.5rem;
+}
+
+.welPagRegisterButton {
+    margin-top: 20px;
+}
+
+.welPagLogInButton {
+    margin-top: 20px;
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.welPagLogInButton:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}

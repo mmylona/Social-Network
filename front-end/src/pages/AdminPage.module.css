@@ -1,0 +1,74 @@
+.adminContainer {
+    padding: 20px;
+    background-color: #f4f4f9; /* Matches the main page background */
+    color: #333; /* Matches the main text color */
+}
+
+.selectionContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.usersSection, .fieldsSection {
+    width: 45%;
+}
+
+.usersSection h3, .fieldsSection h3 {
+    margin-bottom: 10px;
+}
+
+.usersSection ul, .fieldsSection ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3f51b5; /* Matches the navbar background */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #303f9f; /* Slightly darker for hover effect */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+.exportButtons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.exportButtons button {
+    margin-right: 10px;
+}

@@ -1,0 +1,12 @@
+.postBox {
+    margin-top: 20px;
+}
+
+.postBoxInput {
+    margin-bottom: 10px;
+}
+
+.postBoxButton {
+    display: block;
+    margin-left: auto;
+}

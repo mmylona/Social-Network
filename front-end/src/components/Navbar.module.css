@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3f51b5;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbarLeft a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.navbarLeft a.active {
+    color: #4caf50; /* Active tab color */
+    text-decoration: underline;
+}
+
+.navbarRight {
+    display: flex;
+    align-items: center;
+}
+
+.navbarUsername {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.navbarLogout {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbarLogout:hover {
+    background-color: #d32f2f;
+}

@@ -1,0 +1,145 @@
+/* Modern and Futuristic Styling */
+
+.proPageProfileContainer {
+    padding: 30px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proPageProfileContainer:hover {
+    background-color: #2a2a2a;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.proPageprofileHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.proPageprofilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #3f51b5;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.proPageprofilePic:hover {
+    transform: scale(1.1);
+    border-color: #757de8;
+}
+
+.proPageProfileInfo {
+    flex: 1;
+    color: #ffffff;
+}
+
+.proPageProfileInfo h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.proPageProfileInfo p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #a9a9a9;
+    transition: color 0.3s ease;
+}
+
+.proPageProfileInfo button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 14px rgba(63, 81, 181, 0.4);
+}
+
+.proPageProfileInfo button[disabled] {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+
+.proPageProfileInfo button:hover:not([disabled]) {
+    background-color: #757de8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(63, 81, 181, 0.6);
+}
+
+.proPageProfileDetails {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    padding: 30px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proPageProfileDetails h3 {
+    color: #ffffff;
+}
+
+.proPageProfileDetails p {
+    color: #a9a9a9;
+}
+
+.proPageProfileInfoButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 14px rgba(63, 81, 181, 0.4);
+}
+
+.proPageProfileInfoButton:hover {
+    background-color: #757de8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(63, 81, 181, 0.6);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: #a9a9a9;
+}
+
+li button {
+    margin-left: auto;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 14px rgba(63, 81, 181, 0.4);
+}
+
+li button:hover {
+    background-color: #757de8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(63, 81, 181, 0.6);
+}

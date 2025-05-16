@@ -1,0 +1,68 @@
+/* RegistrationForm.module.css - Adjusted to match ChatPage styling */
+:root {
+    --primary-color: lightblue; /* Matched with ChatPage */
+    --secondary-color: #5e60ce; /* Matched with ChatPage */
+    --background-color: #f0f2f5;
+    --text-color: #333;
+    --error-color: #ff3860;
+    --border-radius: 8px;
+    --transition-speed: 0.4s; /* Slightly faster for a dynamic feel */
+    --font-family: 'Roboto', sans-serif; /* Ensure font consistency */
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin:  auto;
+    margin-top: 80px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+    font-family: var(--font-family);
+}
+
+/* Add the keyframe animation for dynamic background */
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.registrationForm {
+    animation: backgroundShift 30s ease infinite;
+    background-size: 200% 200%;
+}
+
+regInput, regTextarea, regSelect, regButton {
+    font-family: var(--font-family);
+    transition: all var(--transition-speed);
+    border-radius: var(--border-radius); /* Rounded corners for inputs and buttons */
+}
+
+/* Adjust button styling to match ChatPage */
+regButton {
+    background-image: linear-gradient(to right, #0d98ba, #5e60ce);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+regButton:hover {
+    background-image: linear-gradient(to right, #5e60ce, #0d98ba);
+}
+
+/* Error message styling for consistency */
+.regErrorMessage, .MuiAlert-root {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: 5px;
+}

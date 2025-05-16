@@ -1,0 +1,197 @@
+.adsPage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    align-items: start;
+    padding: 40px;
+    background-color: #121212; /* Dark background for contrast */
+}
+
+/* Button Styling for a More Modern Look */
+.createJobBtn, .postJobBtn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.createJobBtn:hover, .postJobBtn:hover {
+    background-color: #1558c0;
+    transform: translateY(-2px); /* Subtle hover animation */
+}
+.advModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Darkened overlay */
+    z-index: 1000; /* Ensure it's on top of all elements */
+    padding: 20px;
+}
+
+.advModalContent {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 90%; /* Ensures it's responsive on smaller screens */
+    max-height: 80vh; /* Prevents modal from overflowing screen height */
+    overflow-y: auto; /* Adds scroll if content exceeds the modal size */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Adds depth to the modal */
+    position: relative;
+    z-index: 1100; /* Ensures it's above other elements */
+}
+
+.advClose {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #f44336; /* Red close button for visibility */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.advClose:hover {
+    background-color: #d32f2f; /* Darker hover effect for the close button */
+}
+
+.adForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Spacing between form elements */
+}
+
+.adForm input[type="text"], .adForm textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.adForm input[type="text"]:focus, .adForm textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.adForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.adForm label {
+    font-weight: 600;
+    color: #333;
+}
+
+.adForm button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adForm button:hover {
+    background-color: #1558c0;
+}
+
+.jobAdCard {
+    background-color: #1e1e1e; /* Darker card background */
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: relative;
+}
+
+.jobAdCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.jobAdCard h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.jobAdCard p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #b0b0b0; /* Softer text for additional info */
+}
+
+.jobAdCard button {
+    margin-top: auto;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.jobAdCard button:hover {
+    background-color: #1558c0;
+    transform: translateY(-3px);
+}
+
+.jobAdCard button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .adsPage {
+        grid-template-columns: 1fr;
+    }
+
+    .jobAdCard {
+        padding: 16px;
+    }
+
+    .advModalContent {
+        width: 90%; /* Fullscreen modal for smaller screens */
+    }
+}
+
+.jobAdCard .deleteJobBtn {
+    background-color: lightcoral;
+    color: #721c24;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.jobAdCard .deleteJobBtn:hover {
+    background-color: #f5c6cb;
+}

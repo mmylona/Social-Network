@@ -1,0 +1,127 @@
+.personalInformationPage {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: #5e60ce;
+    padding: 20px;
+}
+
+.personalInformationContainer {
+    max-width: 800px;
+    margin: auto;
+    background: #808080;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.perIninputField {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #0d98ba, #5e60ce);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #5e60ce, #0d98ba);
+}
+
+.label {
+    color: #8a8a8a;
+}
+.customFileUpload {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+/* Add animations for inputs */
+.perIninputField:focus {
+    border-color: #0d98ba;
+    transition: border-color 0.3s ease;
+}
+
+/* Error and Message Styling */
+.error-message, .success-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.error-message {
+    background-color: #ffccd5;
+    color: #d00000;
+}
+
+.success-message {
+    background-color: #caffbf;
+    color: #009d00;
+}
+.cvLink {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #0073b1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    /* Add a slight shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cvLink:hover {
+    background-color: #005f8d;
+    /* Slightly lift the link on hover for a subtle effect */
+    transform: translateY(-2px);
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Center the content */
+}
+
+.backgroundImage {
+    width: 25%;
+    height: auto;
+}
+
+.changeIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.imageContainer:hover .changeIcon {
+    display: block;
+}

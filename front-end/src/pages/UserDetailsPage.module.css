@@ -1,0 +1,13 @@
+/* src/pages/UserDetailsPage.module.css */
+.uDetUserDetailsPage {
+    padding: 20px;
+}
+
+.uDetUserDetailsPage p {
+    margin-bottom: 10px;
+}
+
+.uDetUserDetailsPage p strong {
+    display: inline-block;
+    width: 150px;
+}

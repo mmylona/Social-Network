@@ -1,0 +1,17 @@
+/* src/components/Timeline.module.css */
+.timeline {
+    padding: 20px;
+}
+
+.timelineCard {
+    background-color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.MuiTypography-root {
+    color: #fff !important;
+}
+
+.MuiCardContent-root {
+    background-color: #1e1e1e;
+}

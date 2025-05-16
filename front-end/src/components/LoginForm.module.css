@@ -1,0 +1,57 @@
+.logInvariables {
+    --gradient-start: #6e48aa;
+    --gradient-end: #9d50bb;
+    --input-bg-color: #222;
+    --input-border-color: #333;
+    --button-bg-color: #6e48aa;
+    --button-hover-bg-color: #9d50bb;
+    --error-color: #ff3860;
+    --font-color: #fff;
+}
+
+.logInformContainer {
+    background: var(--input-bg-color);
+    color: var(--font-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.logInformContainer h4 {
+    text-align: center;
+    color: var(--font-color);
+}
+
+.logInTextField {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    color: var(--font-color);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.logInTextField:focus {
+    border-color: var(--gradient-end);
+}
+
+.logInButton {
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    color: var(--font-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logInButton:hover {
+    background-image: linear-gradient(to right, var(--button-hover-bg-color), var(--gradient-start));
+}
+
+.logInErrorMessage {
+    color: var(--error-color);
+    text-align: center;
+    margin-top: 10px;
+}

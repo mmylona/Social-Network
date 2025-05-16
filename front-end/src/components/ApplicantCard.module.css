@@ -1,0 +1,50 @@
+/* ApplicantCard.module.css */
+.applicantCard {
+    display: flex;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.applicantAvatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.applicantInfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.applicantTitle, .applicantLocation {
+    margin: 0;
+    font-weight: normal;
+}
+
+.applicantDetails {
+    margin-top: 10px;
+}
+
+.applWorkExperience, .applEducation {
+    margin-top: 5px;
+}
+
+.downloadCvBtn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.downloadCvBtn:hover {
+    background-color: #1558c0;
+}
