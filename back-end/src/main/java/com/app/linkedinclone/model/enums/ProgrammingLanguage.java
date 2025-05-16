@@ -1,0 +1,46 @@
+package com.app.linkedinclone.model.enums;
+
+import lombok.ToString;
+
+@ToString
+public enum ProgrammingLanguage {
+    JAVA,
+    PYTHON,
+    JAVASCRIPT,
+    C,
+    C_PLUS_PLUS,
+    C_SHARP,
+    RUBY,
+    SWIFT,
+    KOTLIN,
+    GO,
+    TYPESCRIPT,
+    PHP,
+    RUST,
+    SCALA,
+    R,
+    SHELL,
+    OBJECTIVE_C,
+    SQL,
+    HTML,
+    CSS,
+    RUBY_ON_RAILS,
+    DJANGO,
+    SPRING,
+    ANGULAR,
+    REACT,
+    VUE,
+    EMBER,
+    BACKBONE,
+    EXPRESS,
+    FLASK,
+    LARAVEL,
+    SYMFONY,
+    CODEIGNITER,
+    PLAY,
+    SPARK,
+    HIBERNATE,
+    MYBATIS,
+    SPRING_BOOT,
+    NODE_JS
+}
